@@ -2,6 +2,7 @@ const countdownElement = document.getElementById("countdown");
 const countdownTitle = document.getElementById("countdown-title");
 const formSection = document.getElementById("form-section");
 const messageSection = document.getElementById("message-section");
+const messageEspecial= document.getElementById("message_especial");
 const userNameInput = document.getElementById("user-name");
 const userDreamInput = document.getElementById("user-dream");
 const submitButton = document.getElementById("submit-form");
@@ -21,6 +22,29 @@ const dedicatoria7 = document.getElementById("dedicatoria7");
 const dedicatoria8 = document.getElementById("dedicatoria8");
 const dedicatoria9 = document.getElementById("dedicatoria9");
 const dedicatoria10 = document.getElementById("dedicatoria10");
+const dedicatoria11 = document.getElementById("dedicatoria11");
+const dedicatoria12 = document.getElementById("dedicatoria12");
+const dedicatoria13 = document.getElementById("dedicatoria13");
+const dedicatoria14 = document.getElementById("dedicatoria14");
+const dedicatoria15 = document.getElementById("dedicatoria15");
+const dedicatoria16 = document.getElementById("dedicatoria16");
+const dedicatoria17 = document.getElementById("dedicatoria17");
+const dedicatoria18 = document.getElementById("dedicatoria18");
+const dedicatoria19 = document.getElementById("dedicatoria19");
+const dedicatoria20 = document.getElementById("dedicatoria20");
+const dedicatoria21 = document.getElementById("dedicatoria21");
+const dedicatoria22 = document.getElementById("dedicatoria22");
+const dedicatoria23 = document.getElementById("dedicatoria23");
+const dedicatoria24 = document.getElementById("dedicatoria24");
+const dedicatoria25 = document.getElementById("dedicatoria25");
+const dedicatoria26 = document.getElementById("dedicatoria26");
+const dedicatoria27 = document.getElementById("dedicatoria27");
+const dedicatoria28 = document.getElementById("dedicatoria28");
+const dedicatoria29 = document.getElementById("dedicatoria29");
+const dedicatoria30 = document.getElementById("dedicatoria30");
+const dedicatoria31 = document.getElementById("dedicatoria31");
+const dedicatoria32 = document.getElementById("dedicatoria32");
+const dedicatoria33 = document.getElementById("dedicatoria33");
 const canvas = document.getElementById("fireworks");
 const ctx = canvas.getContext("2d");
 const backgroundMusic = document.getElementById("background-music");
@@ -92,7 +116,7 @@ document.body.addEventListener("click", function startMusic() {
 // Contador
 function updateCountdown() {
   const now = new Date();
-  const target = new Date("2025-01-01T00:00:00");//"2025-01-01T00:00:00" - Date.now()
+  const target = new Date(Date.now());//"2025-01-01T00:00:00" - Date.now()
   const timeDiff = target - now;
 
   if (timeDiff <= 0) {
@@ -173,6 +197,12 @@ submitButton.addEventListener("click", () => {
   const userName = userNameInput.value.trim();
   const userDream = userDreamInput.value.trim();
 
+  // Aquí verificamos si el nombre corresponde a uno específico
+  if (userName.toLowerCase() === "MELISSA2025".toLowerCase()) {
+    alert(`mmm, eres ${userName}...espera espera ¡eres tu!, bueno eso espero, eres tu ¿cierto?`);
+    messageEspecial.classList.remove("hidden");
+  }
+
   if (userName && userDream) {
     userDisplayName.textContent = userName;
     messageDeseo.textContent = sarcasticResponses[Math.floor(Math.random() * sarcasticResponses.length)];
@@ -198,6 +228,29 @@ submitButton.addEventListener("click", () => {
     showMessageWithDelay(dedicatoria8, 14000);
     showMessageWithDelay(dedicatoria9, 15000);
     showMessageWithDelay(dedicatoria10, 16000);
+    showMessageWithDelay(dedicatoria11, 17000);
+    showMessageWithDelay(dedicatoria12, 18000);
+    showMessageWithDelay(dedicatoria13, 19000);
+    showMessageWithDelay(dedicatoria14, 20000);
+    showMessageWithDelay(dedicatoria15, 21000);
+    showMessageWithDelay(dedicatoria16, 22000);
+    showMessageWithDelay(dedicatoria17, 23000);
+    showMessageWithDelay(dedicatoria18, 24000);
+    showMessageWithDelay(dedicatoria19, 25000);
+    showMessageWithDelay(dedicatoria20, 26000);
+    showMessageWithDelay(dedicatoria21, 27000);
+    showMessageWithDelay(dedicatoria22, 28000);
+    showMessageWithDelay(dedicatoria23, 29000);
+    showMessageWithDelay(dedicatoria24, 30000);
+    showMessageWithDelay(dedicatoria25, 31000);
+    showMessageWithDelay(dedicatoria26, 32000);
+    showMessageWithDelay(dedicatoria27, 33000);
+    showMessageWithDelay(dedicatoria28, 34000);
+    showMessageWithDelay(dedicatoria29, 35000);
+    showMessageWithDelay(dedicatoria30, 36000);
+    showMessageWithDelay(dedicatoria31, 37000);
+    showMessageWithDelay(dedicatoria32, 38000);
+    showMessageWithDelay(dedicatoria33, 39000);
   } else {
     alert("¡Ups! No escribiste nada. ¿Te vas a quedar sin deseo? 😜");
   }

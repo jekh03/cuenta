@@ -170,3 +170,34 @@ canvas {
 .tarjeta {
     background-color: #d351a8 !important; /* Un color */
 }
+
+#message-section {
+    /* overflow-y: scroll; */
+    height: 100vh;
+}
+
+#message_especial {
+    background-color: rgb(47 7 42 / 90%);
+    border: 2px solid #ab0498;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+    position: relative;
+    z-index: 10; /* Asegúrate de que esté por encima de otros elementos */
+    overflow: scroll;
+    height: 10vh;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
