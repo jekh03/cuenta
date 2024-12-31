@@ -47,7 +47,7 @@ const musicList = [
   "./X2Download.app - K'NAAN - Bang Bang ft. Adam Levine (128 kbps).mp3",
   "./XDinero;; Ella besa así [Letra].mp3",
   "./KAROL G - Si Antes Te Hubiera Conocido  Coke Studio.mp3",
-  "./QUEVEDO  BZRP Music Sessions #52.mp3"
+  "./QUEVEDO_BZRP_Music_Sessions_52.mp3"
 ];
 
 // Función para barajar la lista de canciones
