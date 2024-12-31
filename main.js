@@ -39,18 +39,24 @@ let audioPlayer = new Audio();
 
 // Lista de canciones
 const musicList = [
+  "./Me_Voy.mp3",
+  "./Indila.mp3",
+  "./APT.mp3",
   "./La_Bachata_MTZ_Manuel.mp3",
   "./Major_Lazer_J Balvin_Que_Calor.mp3",
   "./BANNERS - Someone To You.mp3", // Reemplaza con las rutas reales
   "./Mingle_Game.mp3",
   "./Christian French - head first.mp3",
   "./Ed Sheeran - Bad Habits (BD12 Remix) (320 kbps).mp3",
+  "./Savage_Love.mp3",
   "./Cody Simpson - La Da Dee (Official Music Video).mp3",
   "./Good To Be.mp3",
   "./X2Download.app - K'NAAN - Bang Bang ft. Adam Levine (128 kbps).mp3",
   "./XDinero;; Ella besa así [Letra].mp3",
+  "./Tatto.mp3",
   "./KAROL G - Si Antes Te Hubiera Conocido  Coke Studio.mp3",
-  "./QUEVEDO_BZRP_Music_Sessions_52.mp3"
+  "./QUEVEDO_BZRP_Music_Sessions_52.mp3",
+  "./Smart.mp3",
 ];
 
 // Función para barajar la lista de canciones
