@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡Bienvenido 2025!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="celebration-music" loop autoplay>
+    <source src="./Christian French - head first.mp3" type="audio/mp3">
+    <source src="./KAROL G - Si Antes Te Hubiera Conocido  Coke Studio.mp3" type="audio/mp3">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+
+  <div class="container">
+    <div class="inicio">
+      <h1 id="countdown-title">🎵 Cuenta regresiva para el 2025 🍾</h1>
+      <p> Haz click en la pantalla si deseas escuchar las musicas </p>
+      <p> Para dedicatorias y musicas escribenos aquí antes que la cuenta llegue a cero</p>
+      <p> 924073688 - 901911733</p>
+      <div id="countdown" class="countdown"></div>
+    </div>
+
+    <div id="form-section" class="hidden">
+      <h2>¡Feliz 2025! 🌟</h2>
+      <p>Escribe tu nombre y uno de tus deseos para este año:</p>
+      <input type="text" id="user-name" placeholder="Tu nombre" />
+      <input type="text" id="user-dream" placeholder="Tu deseo para el 2025" />
+      <button id="submit-form">Enviar</button>
+    </div>
+
+    <div id="message-section" class="hidden">
+      <h2>¡Te deseamos un increíble 2025, <span id="user-display-name"></span>!</h2>
+      <div class="message-cards">
+        <div class="message-card hidden" id="message-deseo"></div>
+        <div class="message-card hidden" id="message-text"></div>
+        <div class="message-card hidden" id="prediction-text"></div>
+        <div class="message-card hidden" id="video-link">
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">¡Haz clic aquí para ver el video de motivación!</a>
+        </div>
+        <div class="message-card hidden tarjeta" id="dedicatoria1">¡Feliz año nuevo! Que 2025 nos traiga más momentos juntos y risas interminables 💖 – Ana</div> 
+        <div class="message-card hidden tarjeta" id="dedicatoria2">Este nuevo año te deseo lo mejor, ¡pero no olvides compartir la pizza de vez en cuando! 🍕😁 – Juanito</div>
+        <div class="message-card hidden tarjeta" id="dedicatoria3">Que este 2025 sea tan brillante como tú, lleno de amor y grandes aventuras 🌟 – Laura</div>
+        <div class="message-card hidden tarjeta" id="dedicatoria4">A ti, mi querido Pato Loco, el que siempre hace mis días más divertidos. ¡Que tengas un año tan épico como nuestra amistad! 🎉 – Carlos</div>
+        <div class="message-card hidden tarjeta" id="dedicatoria5">¡2025 llegó! Que tus días estén llenos de nuevas oportunidades y café ☕✨ – Carlitos</div>
+        <div class="message-card hidden tarjeta" id="dedicatoria6">Feliz año, Valentina. Gracias por hacer que cada día sea mejor. ¡Que este 2025 sea tan especial como tú! 💕 – Vane</div>
+        <div class="message-card hidden tarjeta" id="dedicatoria7">Este año solo quiero una cosa, Chiqui Bombón: ¡que sigamos compartiendo muchos más momentos geniales juntos! 💫 – Mi querido Javi</div>
+        <div class="message-card hidden tarjeta" id="dedicatoria8">2025, te estoy esperando, ¡y con Chupetín a mi lado será aún más increíble! 🎊 – Adrián</div>
+        <div class="message-card hidden tarjeta" id="dedicatoria9">Este 2025, que tus preocupaciones sean tan pequeñas como mis habilidades para cocinar, ¡pero tus alegrías tan grandes como mi amor por ti, Superchef! 🍳💘 – Hugo</div>
+        <div class="message-card hidden tarjeta" id="dedicatoria10">¡Feliz 2025! Que la vida te regale la misma alegría que siento cada vez que nos vemos 😍 – Sofía</div>
+      </div>
+    </div>
+
+    <div id="message-container"></div>
+
+    <canvas id="fireworks"></canvas>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+

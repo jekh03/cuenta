@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #0f2027, #203a43, #000000);
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    height: 100vh;
+    max-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+  
+.container {
+    position: relative;
+    z-index: 10;
+    padding: 20px;
+}
+
+h1, h2, .card {
+    animation: glow 1.5s infinite alternate;
+}
+
+a {
+    color: red;
+}
+  
+input {
+    width: 80%;
+    max-width: 400px;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+  
+button {
+    padding: 10px 20px;
+    background: #ff5722;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+  
+button:hover {
+    background: #ff784e;
+}
+  
+.hidden {
+    display: none;
+}
+  
+.countdown {
+    font-size: 3rem;
+    margin: 20px 0;
+}
+  
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px #ff5722, 0 0 20px #ff784e, 0 0 30px #ff784e;
+    }
+    to {
+      text-shadow: 0 0 20px #ff5722, 0 0 30px #ff784e, 0 0 40px #ff784e;
+    }
+}
+  
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+  
+.fade-in {
+    animation: fadeIn 1s ease-out forwards;
+}
+  
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+  
+  /* Estilos para las tarjetas de los mensajes */
+.card {
+    background-color: #333;
+    color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+  
+.card.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+  
+.card h3 {
+    margin-bottom: 10px;
+}
+  
+.card p {
+    font-size: 1.1rem;
+}
+  
+.message-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+  
+.message-card {
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateX(100vw);
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+  
+.message-card.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+  
+.message-card.hidden {
+    display: none;
+}
+  
+#video-link a {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    color: #ff5722;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+  
+#video-link a:hover {
+    color: #ff784e;
+}
+  
+.tarjeta {
+    background-color: #d351a8 !important; /* Un color */
+}
