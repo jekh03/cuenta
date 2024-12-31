@@ -39,7 +39,10 @@ let audioPlayer = new Audio();
 
 // Lista de canciones
 const musicList = [
+  "./La_Bachata_MTZ_Manuel.mp3",
+  "./Major_Lazer_J Balvin_Que_Calor.mp3",
   "./BANNERS - Someone To You.mp3", // Reemplaza con las rutas reales
+  "./Mingle_Game.mp3",
   "./Christian French - head first.mp3",
   "./Ed Sheeran - Bad Habits (BD12 Remix) (320 kbps).mp3",
   "./Cody Simpson - La Da Dee (Official Music Video).mp3",
